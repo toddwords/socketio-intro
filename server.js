@@ -55,9 +55,12 @@ function newConnection(socket){
 				break;
 			}
 		}
-		blob.x = data.x;
-		blob.y = data.y;
-		blob.r = data.r;
+		if(blob){
+			blob.x = data.x;
+			blob.y = data.y;
+			blob.r = data.r;
+		}
+		
 	}
 	function eaten(data){
 		socket.broadcast.to(data.id).emit('eaten', true)
