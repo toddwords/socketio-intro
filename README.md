@@ -39,13 +39,12 @@ io.sockets.on('connection', newConnection);
 function newConnection(socket){
 	console.log('new connection: ' + socket.id)
 	//we put all the rest of our code inside that connection, because we only want it to run once we're connected
-  //this section will have one or more event listeners that line up with various things that can happen on the client side (like sending a message in a chat app)
+  	//this section will have one or more event listeners that line up with various things that can happen on the client side (like 		sending a message in a chat app)
 	socket.on('myEvent', myEventHandler);
 	function myEventHandler(data){
-    //what you do in response to the event goes here
-    //often you'll want one of the four 'emit' events listed below
-    socket.broadcast.emit('myServerEvent', data);
-		
+    		//what you do in response to the event goes here
+    		//often you'll want one of the four 'emit' events listed below
+    		socket.broadcast.emit('myServerEvent', data);
 	}
 }
 ```
