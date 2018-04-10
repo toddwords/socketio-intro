@@ -8,7 +8,7 @@ Below is a rough guide to how socket.io works on the client side and on the serv
 
 #### Client Side
 On the client side, the socket.io client library needs to be included in the HTML:
-```javascript
+```html
 <script src= 'https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js'></script>
 ```
 And the following line needs to be included at the top of your client.js file:
