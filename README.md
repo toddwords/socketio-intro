@@ -100,3 +100,8 @@ function addMsg(user, msg){
 	$('#messages').append("<p><strong>"+user+": </strong>"+msg+"</p>")
 }
 ```
+# Examples
+
+- [Chat Room](https://socketio-chat-room.glitch.me/) // [Edit on Glitch](https://glitch.com/edit/#!/socketio-chat-room?path=README.md:1:0)
+- [Shared Drawing](https://shared-drawing.glitch.me/) // [Edit on Glitch](https://glitch.com/edit/#!/shared-drawing?path=README.md:1:0)
+- [Agar.io-style Game](https://agario-lite.glitch.me/) // [Edit on Glitch](https://glitch.com/edit/#!/agario-lite?path=README.md:1:0)
